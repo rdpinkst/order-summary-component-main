@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    
+    background-image: url("./images/pattern-background-desktop.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position:  top; 
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card{
+    background-color: white;
+    width: 425px;
+    border-radius: 12px;
+}
+.img-card{
+    width: 100%;
+    object-fit: contain;
+    border-radius: 12px 12px 0 0 ;
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 5px;
+}
