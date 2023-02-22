@@ -20,7 +20,7 @@ body{
 }
 .card{
     background-color: white;
-    width: 425px;
+    width: 26.5625rem;
     border-radius: 12px;
     background-color: white;
 }
@@ -36,6 +36,9 @@ h1{
 }
 .contain-content{
     margin: 35px;
+}
+.info-card{
+    line-height: 1.5rem;
 }
 .music-plan{
     display: flex;
@@ -69,16 +72,18 @@ button{
     border-radius: 10px;
     font-size: 1rem;
     font-weight: 700;
-    padding: 12px;
+    padding: 15px;
     cursor: pointer; 
 }
 .pay{
     background-color: hsl(245, 75%, 52%);
     color: hsl(225, 100%, 98%);
     margin: 2rem 0 1rem 0;
+    box-shadow: hsl(245, 75%, 52%, 0.25) 0px 13px 27px -5px, hsl(245, 75%, 52%, 0.3) 0px 8px 16px -8px;
 }
 .pay:hover{
     opacity: 0.7;
+    box-shadow: hsl(245, 75%, 52%, 0.6) 0px 13px 27px -5px, hsl(245, 75%, 52%, 0.7) 0px 8px 16px -8px;
 }
 .cancel{
     color: hsl(224, 23%, 55%);
@@ -91,4 +96,20 @@ button{
     position: absolute;
     bottom: 0;
     margin-bottom: 5px;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+    body{
+        background-color: hsl(225, 100%, 94%);
+        background-image: none;
+    }
+    .card{
+        width: 20rem;
+    }
+    .contain-content{
+        margin: 21px;
+    }
+    h1{
+        font-size: 1.35rem;
+    }
+
 }
